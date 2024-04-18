@@ -1,0 +1,24 @@
+{{>header}}
+<link href="/css/calendar.css" rel="stylesheet">
+
+    <div class="w-100 border rounded d-flex justify-content-center">
+        <!-- div : 구역/박스 모델 마크업 display : block(한줄차지) -->
+        <div class="w-100 h-100">
+            <div class="topCal border rounded mx-2 ">    <!-- 2-1 달력 상단 -->
+                <span onclick="월증감(0)">◀</span>   <!-- ㅁ+한자키 -->
+                <span class="calDate"> </span>
+                <span onclick="월증감(1)">▶</span>
+            </div>
+            <div class="p-2 m-2">
+                <div class="w-95 calender mx-5">  <!-- 2-2 달력 -->
+                    <div class="week sunday">일</div>
+                    <div class="week">월</div>  <div class="week">화</div>
+                    <div class="week">수</div>  <div class="week">목</div>
+                    <div class="week">금</div>  <div class="week">토</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/js/calendar.js"></script>
+{{>footer}}

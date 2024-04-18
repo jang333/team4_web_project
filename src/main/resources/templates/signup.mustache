@@ -1,0 +1,52 @@
+{{>header}}
+<div class="border rounded d-flex w-100 justify-content-around align-items-center">
+    <div>
+        <img class="w-200 h-200" src="/img/login.png">
+    </div>
+    <div class="w-50">
+        <form class="signUpForm">
+            <p class="text-center"> Ezen University에 오신것을 환영합니다.</p>
+            <div clas="input-group mb-3">
+                <input onkeyup="idcheck()" class="form-control" type="text" id="id" name="id" placeholder="User ID" >
+            </div>
+            <div class="idcheckbox mb-3">
+            </div>
+            <div clas="input-group mb-3">
+                <input onkeyup="pwcheck()" class="form-control" type="password" id="pw" name="pw" placeholder="User Password">
+            </div>
+            <div class="pwcheckbox mb-3">
+            </div>
+            <div>
+                <input onkeyup="namecheck()" class="form-control" type="text" id="name" name="name" placeholder="User Name">
+            </div>
+            <div class="namecheckbox mb-3">
+            </div>
+            <div>
+                <input onkeyup="phonecheck()" class="form-control" type="text" id="phone" name="phone" placeholder="User Phone">
+            </div>
+            <div class="phonecheckbox mb-3">
+            </div>
+            <div class="d-flex">
+                <input onkeyup="emailcheck()" class="form-control w-75" type="text" id="email" name="email" placeholder="User E-Mail">
+                <button type="button" onclick="authrequest()" class="btn btn-outline-secondary btn-sm authBtn">인증하기</button>
+            </div>
+            <div class="authbox">
+
+            </div>
+            <div class="emailcheckbox mb-3">
+            </div>
+            <div>
+                <input onkeyup="addresscheck()" class="form-control" type="text" id="address" name="address" placeholder="User Address">
+            </div>
+            <div class="addresscheckbox mb-3">
+            </div>
+            <div>
+                <input onkeyup="birthcheck()" class="form-control" type="text" id="birth" name="birth" placeholder="User Birth">
+            </div>
+            <div class="birthcheckbox mb-3">
+            </div>
+            <button class="signupbtn btn btn-outline-success w-100 mb-3" type="button" onclick="signup()" id="signBtn">회원가입</button>
+        </form>
+    </div>
+</div>
+{{>footer}}

@@ -1,0 +1,29 @@
+/* 3/7  캘린더 css */
+.topCal{ /* 2-1 달력 상단 */
+    text-align: center; /* 내용물 가로 가운데 */
+    font-size: 30px; /* 글자 크기 */
+    margin: 30px 0px; /* 바깥 여백 */
+}
+.calender{ /* 2-2 달력  */
+    display : flex ; /* 자식 요소들을 배치방법 : 기본값 가로배치  */
+    flex-wrap: wrap;
+
+}
+.calender > div{ /* 달력내 한칸*/
+    width: 13.8%; /* div 한개당 13% */
+    border: 1px solid #dee2e6; /* 구역 테두리 */
+    border-radius: 5px;
+    height: 80px;          /* 구역 높이 */
+    padding: 5px;
+    margin: 2px;
+}
+.calender > .week{  height: 30px; text-align: center; margin-bottom: 3px;}
+.calender > .sunday{ background-color: var(--bs-danger); color: white;}
+
+
+.inputBox input , .inputBox button {
+    padding: 10px;
+    border: none;
+    background-color: #e8e8e8;
+    border-radius: 15px;
+}

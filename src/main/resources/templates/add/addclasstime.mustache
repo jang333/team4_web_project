@@ -1,0 +1,68 @@
+{{>header}}
+<div class="w-100 border rounded">
+    <div id="inputClass" class="sticky-top p-3">
+        <div class="border-bottom mb-3 pb-4">
+            <h1 class="h2">강의시간 등록하기</h1>
+            <div class="d-flex">
+                <select class="dayweek form-select w-25 me-2">
+                    <option selected>요일</option>
+                    <option value="월">월</option>
+                    <option value="화">화</option>
+                    <option value="수">수</option>
+                    <option value="목">목</option>
+                    <option value="금">금</option>
+                </select>
+                <select class="starttime form-select w-25 me-2">
+                    <option selected>시작시간</option>
+                    <option value="1">09:00</option>
+                    <option value="2">10:00</option>
+                    <option value="3">11:00</option>
+                    <option value="4">12:00</option>
+                    <option value="5">13:00</option>
+                    <option value="6">14:00</option>
+                    <option value="7">15:00</option>
+                    <option value="8">16:00</option>
+                    <option value="9">17:00</option>
+                    <option value="10">18:00</option>
+                </select>
+                <select class="endtime form-select w-25 me-2">
+                    <option selected>끝시간</option>
+                    <option value="1">09:50</option>
+                    <option value="2">10:50</option>
+                    <option value="3">11:50</option>
+                    <option value="4">12:50</option>
+                    <option value="5">13:50</option>
+                    <option value="6">14:50</option>
+                    <option value="7">15:50</option>
+                    <option value="8">16:50</option>
+                    <option value="9">17:50</option>
+                    <option value="10">18:50</option>
+                </select>
+                <button class="btn btn-success" onclick="checkEduTime()" type="button">등록</button>
+            </div>
+        </div>
+    </div>
+    <div class="pt-3 px-3">
+        <table class="table table-striped-columns table-hover border-top align-middle classTimeBox">
+            <thead>
+            <tr class="text-center">
+                <th scope="col">번호</th>
+                <th scope="col">요일</th>
+                <th scope="col">시작 시간</th>
+                <th scope="col">끝 시간</th>
+                <th scope="col">비고</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-center pt-3 p-3 border-bottom pagination">
+        페이지네이션
+    </div>
+</div>
+<script src="/js/classtime.js"></script>
+{{>footer}}

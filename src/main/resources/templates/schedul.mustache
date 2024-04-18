@@ -1,0 +1,52 @@
+{{>header}}
+    <div class="w-100 border rounded">
+        <div id="inputClass" class="sticky-top p-3">
+            <div class="border-bottom mb-3 pb-4">
+                <h1 class="h2">학사일정 등록하기</h1>
+                <div class="d-flex mt-3">
+                        <table class="table table-borderless align-middle">
+                            <head>
+                                <tr class="text-center">
+                                    <form class ="schedulForm">
+                                    <th>
+                                        <input class="form-control" type="color" name="scolor">
+                                    </th>
+                                    <th>
+                                        <input class="form-control" type="text" name="sccontent" placeholder="일정">
+                                    </th> 
+                                    <th>
+                                        <input class="form-control" type="date" name="stdate">
+                                    </th>
+                                    <th class="text-center">
+                                        <button type="button" class="schedulInputBtn btn btn-success" onclick="schedulPut()">등록</button>
+                                    </th>
+                                    </form>
+                                </tr>
+                            </head>
+                        </table>
+                </div>
+            </div>
+            <div class="pt-3 px-3">
+                <table class="table table-striped-columns table-hover border-top align-middle">
+                    <thead>
+                        <tr class="text-center">
+                            <th>번호</th>
+                            <th>배경색</th>
+                            <th>일정</th>
+                            <th>시작날짜</th>
+                            <th>수정</th>
+                            <th>삭제</th>
+                        </tr>
+                    </thead>
+                    <tbody class="schedulInfo">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-center pt-3 p-3 border-bottom pagination">
+                페이지네이션
+            </div>
+        </div>
+    </div>
+<script src="/js/schedul.js"></script>
+{{>footer}}

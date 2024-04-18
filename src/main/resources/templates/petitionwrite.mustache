@@ -1,0 +1,36 @@
+{{>header}}
+    <div class="w-100 border rounded">
+        <div class="p-4 m-4 border-bottom">
+            <h3>청원 작성</h3>
+        </div>
+        <div class="p-4 m-4 border rounded">
+            <form class="petitionForm">
+                <table class="petitionWrite table">
+                    <tr>
+                        <th>등록날짜</th>
+                        <td class="regidate"></td>
+                        <th>마감날짜</th>
+                        <td class="duedate"></td>
+                        <th>작성자</th>
+                        <td>김학생</td>
+                        <th>청원상태</th>
+                        <td>대기</td>
+                    </tr>
+                    <tr>
+                        <th>제목</th>
+                        <td colspan="5"><input class="ptitle form-control" type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td colspan="5"><textarea class="pcontent form-control"  cols="100%" rows="10"></textarea></td>
+                    </tr>
+                </table>
+                <div class="text-end">
+                    <button onclick="petWrite()" type="button" class="btn btn-danger btn text-end">Back</button>
+                    <button onclick="petWrite()" type="button" class="btn btn-success btn text-end">Write</button>
+                </div>
+            </form>
+        </div>
+        <script src="/js/petitionwrite.js"></script>
+    </div>
+{{>footer}}

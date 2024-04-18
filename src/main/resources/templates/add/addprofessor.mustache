@@ -1,0 +1,55 @@
+{{>header}}
+<div class="w-100 border rounded">
+    <div id="inputClass" class="sticky-top p-3">
+        <div class="border-bottom mb-3 pb-4">
+            <h1 class="h2">교수 등록하기</h1>
+            <div class="d-flex align-items-center">
+                <form class="createPutProfessor w-75 mb-0">
+                    <div class="mb-2">
+                        <select name="mno" class="viewMember form-select">
+
+                        </select>
+                    </div>
+                    <div>
+                        <div class="d-flex mb-2">
+                            <input class="form-control w-50 me-2" name="pgrade" type="text" placeholder="등급"/>
+                            <input class="form-control w-50 me-2" name="psalary" type="text" placeholder="급여"/>
+                            <input class="form-control w-50" name="proom" type="text" placeholder="연구실주소"/>
+                        </div>
+                        <div class="d-flex">
+                            <input class="form-control w-50 me-2" name="degree" type="text" placeholder="학위"/>
+                            <input class="form-control w-50 me-2" name="majorpart" type="text" placeholder="전공"/>
+                            <input class="form-control w-50" name="mainmajor" type="text" placeholder="담당학과"/>
+                        </div>
+                    </div>
+                </form>
+                    <button style="--bs-btn-padding-y: 2.5rem; --bs-btn-padding-x: 2rem;" class="btn btn-success btn-lg ms-4" onclick="postProfessor()" type="button">등록</button>
+            </div>
+        </div>
+    </div>
+    <div class="pt-3 px-3 tabletest">
+        <table class="table table-sm table-striped-columns table-hover border-top align-middle">
+            <thead>
+                <tr class="text-sm-center">
+                    <th scope="col">번호</th>
+                    <th>이름</th>
+                    <th>등급</th>
+                    <th>급여</th>
+                    <th>연구실주소</th>
+                    <th>학위</th>
+                    <th>전공</th>
+                    <th>담당학과</th>
+                    <th>비고</th>
+                </tr>
+            </thead>
+            <tbody class="getAllProfessor">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-center pt-3 p-3 border-bottom pagination">
+        페이지네이션
+    </div>
+</div>
+<script src="/js/professor.js"></script>
+{{>footer}}

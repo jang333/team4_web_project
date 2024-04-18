@@ -1,0 +1,47 @@
+{{>header}}
+<div class="w-100 border rounded position-relative">
+        <div class="petitionView border rounded m-2 p-2 h-50">
+            <div class="boardViewBox m-2">
+                <table class="petitionWrite table">
+                    <tr>
+                        <th>제목</th>
+                        <td colspan="7" class="ptitle"></td>
+                    </tr>
+                    <tr>
+                        <th>등록일자</th>
+                        <td colspan="3" class="regidate"></td>
+                        <th>마감일자</th>
+                        <td colspan="3" class="duedate"></td>
+                    </tr>
+                    <tr>
+                        <th>작성자</th>
+                        <td colspan="2" class="name"></td>
+                        <th>청원상태</th>
+                        <td colspan="2" class="pstate"></td>
+                        <th>참여수</th>
+                        <td colspan="2" class="participation"></td>
+                    </tr>
+                </table>
+                <div class="pcontent m-3">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="border rounded m-2 p-2">
+            <div class="replyBox">
+                <div class="replyListBox">
+                    <ul class="p-0">
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex mt-2 replyBox">
+                <input class="replycontent form-control w-75 m-1">
+                <button onclick="onRelyWrite()" type="button" class="btn btn-sm btn-outline-success ">댓글작성</button>
+            </div>
+            <div class="text-end m-1 changeBtn">
+                <button onclick="location.href='/up/pt/li'" type="button" class="btn btn-danger btn text-end">뒤로가기</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/petitionview.js"></script>
+{{>footer}}

@@ -1,0 +1,57 @@
+#mainArea{
+    top: 100px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+#customNav{
+    height: 100%;
+}
+
+.nav-link{
+    color: #00357B;
+}
+
+.active{
+    background-color: #00357B !important;
+}
+
+.tabletest thead tr th:nth-child(1){
+    width: 50px;
+}
+.tabletest thead tr th:nth-child(2){
+    width: 90px;
+}
+.tabletest thead tr th:nth-child(9){
+    width: 70px;
+}
+
+.petBox{
+    width: 31% !important;
+}
+
+#logBtn{
+    --bs-btn-color: #FFFFFF;
+    --bs-btn-border-color: #00357B;
+    --bs-btn-bg: #00357B;
+    --bs-btn-hover-bg: #FFFFFF;
+    --bs-btn-hover-color: #00357B;
+    --bs-btn-hover-border-color: #00357B;
+    --bs-btn-active-bg: #00357B;
+    --bs-btn-disabled-color: #00357B;
+    --bs-btn-disabled-border-color: #00357B;
+    --bs-btn-active-border-color: #00357B;
+}
+
+#signBtn{
+    --bs-btn-color: #FFFFFF;
+    --bs-btn-border-color: #198754;
+    --bs-btn-bg: #198754;
+    --bs-btn-hover-bg: #FFFFFF;
+    --bs-btn-hover-color: #198754;
+    --bs-btn-hover-border-color: #198754;
+    --bs-btn-active-bg: #198754;
+    --bs-btn-disabled-color: #198754;
+    --bs-btn-disabled-border-color: #198754;
+    --bs-btn-active-border-color: #198754;
+}
